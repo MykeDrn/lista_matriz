@@ -1,22 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 int main()
 {
     int a[3][3], b[3][3];
     int i, j, k, l;
     srand(time(NULL));
-    
+
     for(i=0; i<3; i++){
         for(j=0; j<3; j++){
-            
-            a[i][j] = rand()%50;
+
+            a[i][j] = rand()%(1,50);
             //b[i][j] = rand()%50;
         }
     }
-    for(k=3; k<0; k--){
-        for(l=3; l<0; l--){
-            printf("matriz[%d][%d] = %d", i, j, a[i][j]);
+    for(k=3; k>0; k--){
+        for(l=3; l>0; l--){
+            printf("\n\nmatriz[%d][%d] = %d", k, l, a[k][l]);
         }
     }
 }
