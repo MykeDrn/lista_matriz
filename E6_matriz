@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+struct reserva(){
+    bool reserva = false;
+    int codigo
+}assento[3][3];
+
+void reservar();
+
+int main() {
+    
+    int trig = 0, opt;
+    
+    do{
+        printf("Opções: \n1--reservar\n2--buscar reserva\n0--sair.");
+        scanf("%d", &opt);
+        
+    switch opt{
+        
+     case 1:   
+        reservar();
+        break;
+    case 2: 
+        
+        
+    }
+    }while(trig == 0);
+}
+
+void reservar(){
+    int fila, cadeira, 
+    printf("Assento que deseja reservar: ");
+    printf("\nFileira: ");
+    scanf("%d", &fila);
+    printf("\nassento: ");
+    scanf("%d", &cadeira);
+    //reservar(fila, cadeira);
+    
+    if(assento[fila][cadeira].reserva == true){
+    printf("assento ocupado.\n por favor, escolha um assento diferente. ");
+    }else{
+        assento[fila][cadeira].reserva==true;
+        assento[fila][cadeira].codigo = (fila+cadeira)*cadeira;
+    }
+};
