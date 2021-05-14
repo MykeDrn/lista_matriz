@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int matriz[5][5];
+    int i, j, k, linha, soma = 0;
+    float media = 0;
+    
+    for(i=0; i<5; i++){
+        for(j=0; j<5; j++){
+            
+            printf("Digite os valores: ");
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+    
+    printf("\nLinha: ");
+    scanf("%d", &linha);
+    
+    for(k=0; k<5; k++){
+        
+        soma = soma+matriz[linha-1][k];
+        }
+        media = soma/5;
+        printf("media: %.1f", media);
+    }
