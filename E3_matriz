@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int matriz[6][6];
+    int i, j, comparador = 0;
+    
+    for(i=0; i<6; i++){
+        for(j=0; j<6; j++){
+            
+            printf("Numero: ");
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+    for(i=0; i<6; i++){
+        for(j=0; j<6; j++){
+            if (matriz[i][j] > 10){
+                comparador++;
+            }
+        }
+    }
+    printf("\nexiste(m) %d valor(es) maior(es) que 10 nesta matriz", comparador);
+}
