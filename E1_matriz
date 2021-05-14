@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int matriz[2][2];
+    int i, j, soma = 0;
+    
+    for(i=0; i<2; i++){
+        for(j=0; j<2; j++){
+            
+            printf("Numero: ");
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+    for(i=0; i<2; i++){
+        for(j=0; j<2; j++){
+            printf("\nNumero digitado: %d", matriz[i][j]);
+        }
+    }
+    for(i=0; i<2; i++){
+        for(j=0; j<2; j++){
+            soma+=matriz[i][j];
+        }
+    }
+    printf("\n\nSoma: %d", soma);
+}
